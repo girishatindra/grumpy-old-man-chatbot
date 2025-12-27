@@ -18,7 +18,7 @@ This chatbot simulates a realistic conversation with an old man's persona, enhan
 
 <div align="center" >
 
-[![grandpa-thumbnail](/docs/grandpa-thumnail.png)](#)
+[![grandpa-thumbnail](/docs/grandpa-thumnail.png)](https://grumpyoldman.onrender.com/)
 
 </div>
 
