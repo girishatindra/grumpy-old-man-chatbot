@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>503 Service Unavailable</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/503.css') }}"/>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Jersey+10&family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div class="status">
+            <h1>503 </h1>
+            <h2>Service Unavailable</h2>
+        </div>
+        <div class="message">
+            <p>This site is currently undergoing maintenance, please check back later.</p>
+        </div>
+        <div class="icon">
+            <img src="{{ url_for('static', filename='assets/icon.png') }}" alt="Service Unavailable Icon"/>
+        </div>
+  
+    </div>
+</body>
+</html>

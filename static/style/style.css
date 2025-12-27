@@ -1,0 +1,200 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #face-container {
+            border: 0px solid;
+            height: 300px;
+            width: 75%;
+            margin-top: 5px;
+            position: relative;
+        }
+
+        .face {
+            width: 150px;
+            height: 200px;
+            background: rgb(252, 185, 156);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-top-left-radius: 170px;
+            border-top-right-radius: 170px;
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+        }
+
+        .eyes {
+            width: 30px;
+            height: 30px;
+            background: white;
+            position: absolute;
+            top: 60px;
+            border-radius: 100px;
+            z-index: 99;
+
+        }
+
+        .left-eye {
+            left: 30px;
+        }
+
+        .right-eye {
+            right: 30px;
+        }
+
+        .pupil {
+            width: 20px;
+            height: 20px;
+            background: black;
+            border-radius: 100%;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        .eyebrows {
+            width: 30px;
+            height: 0px;
+            position: absolute;
+            top: 50px;
+            border: 2px white solid;
+            border-top-left-radius: 500px;
+            border-top-right-radius: 500px;
+        }
+
+        .left-eyebrow {
+            left: 30px;
+        }
+
+        .right-eyebrow {
+            right: 30px;
+
+        }
+
+        .nose {
+            width: 20px;
+            height: 20px;
+            background: pink;
+            position: absolute;
+            top: 100px;
+            left: 65px;
+            border-bottom-left-radius: 500px;
+            border-bottom-right-radius: 500px;
+        }
+
+        .mustache {
+            width: 40px;
+            height: 10px;
+            background: white;
+            position: absolute;
+            left: 55px;
+            top: 125px;
+            border-top-right-radius: 100px;
+            border-top-left-radius: 100px;
+        }
+
+        .mouth {
+            width: 30px;
+            height: 1px;
+            background: red;
+            position: absolute;
+            top: 140px;
+            left: 60px;
+        }
+
+        .face>* {
+            transition: all 200ms;
+        }
+
+        .tear {
+            width: 13px;
+            height: 120px;
+            background: rgb(114, 114, 230);
+            position: absolute;
+            top: 70px;
+            z-index: 0;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            transform: scaleY(0);
+            transform-origin: top;
+        }
+
+        .left-tear {
+            left: 35px;
+        }
+
+        .right-tear {
+            right: 35px;
+
+        }
+
+        input {
+            padding: 5px;
+            width: 250px;
+            font-family: "Fuzzy Bubbles", serif;
+
+        }
+
+        .send-prompt {
+            padding: 5px;
+            color: white;
+            background: black;
+            font-family: "Barriecito", serif;
+        }
+
+        .send-prompt:active{
+            background:rgb(255, 255, 255);
+            color:black;
+        }
+
+
+
+
+        #output {
+            width: 300px;
+            height: auto;
+            border: 1px solid;
+            margin-top: 50px;
+            text-align: center;
+            border-radius: 20px;
+            position: relative;
+            color: white;
+            background: black;
+            font-family: "Bahianita", serif;
+            font-size:20px;
+
+        }
+
+        #output::after {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: rgb(255, 253, 253);
+            position: absolute;
+            transform: rotate(45deg);
+            bottom: -8px;
+            background: black;
+        }
+
+        #output > p{
+            margin:10px;
+        }
+
+        #output > p > span{
+            font-weight: lighter;
+            font-size: 10px;
+            font-family: "Fuzzy Bubbles", serif;
+        }
+
+        h1{
+            font-family: "Barriecito", serif;
+        }

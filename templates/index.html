@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Grumpy Old Man</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bahianita&family=Fuzzy+Bubbles&family=Barriecito&display=swap" rel="stylesheet"></head>
+
+<body>
+    <h1>Made By Atindra Girish</h1>
+    <div id="output">
+        <p>Hi i am a Grumpy old man <br> 
+            <span><i>(Have a chat with the old man, try giving him a compliment, insult him or get a piece of his wisdom)</i></span>
+        </p>
+    </div>
+    <div id="face-container">
+        <div class="face">
+            <div class="eyebrows left-eyebrow"></div>
+            <div class="eyebrows right-eyebrow"></div>
+            <div class="left-eye eyes">
+                <div class="pupil"></div>
+            </div>
+            <div class="right-eye eyes">
+                <div class="pupil"></div>
+            </div>
+            <div class="tear left-tear"></div>
+            <div class="tear right-tear"></div>
+            <div class="nose"></div>
+            <div class="mustache"></div>
+            <div class="mouth"></div>
+        </div>
+    </div>
+    <div id="input">
+        <input type="text" class="input-prompt">
+        <button class="send-prompt">Send</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+
+</html>

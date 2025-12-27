@@ -1,0 +1,77 @@
+        *,*::after,*::before{
+            box-sizing:border-box;
+        }
+
+        body,html{
+            margin:0;
+            padding:0;
+            width:100%;
+            height:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
+        }
+
+        #main{
+            width:100%;
+            height:100%;
+            border:1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .icon{
+            width:300px;
+            height:300px;
+            border:red 0px solid;
+            position:absolute;
+            bottom:0;
+        }
+
+
+        .icon > img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .status{
+            margin-top: 18px;
+            border:0px solid red;
+            margin-top:-350px;
+            padding:0;
+        }
+
+        .status > h1{
+            text-align: center;
+            color: black;
+            font-family: "Barriecito", serif;
+            font-weight: 100;
+            font-size: 100px;
+        }
+
+        .status > h2{
+            text-align: center;
+            color: black;
+            font-family: "Barriecito", serif;
+            font-size: 40px;
+            font-weight: normal;
+            margin-top: -80px;
+ 
+        }
+
+        .message{
+            border:0px solid red;  
+        }
+
+        .message > p{
+            text-align: center;
+            color: black;
+            font-family: "Barriecito", serif;
+            font-size: 30px;
+            margin-top:-5px;
+        }
