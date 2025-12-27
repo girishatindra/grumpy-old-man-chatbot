@@ -1,5 +1,15 @@
 # :older_man: Chat With The Grumpy Old Man — *A Gemini AI Experience*
 
+<br>
+<br>
+
+> [!IMPORTANT]
+> <br> **Infrastructure Migration in Progress**<br><br>
+> *The site is currently being deployed to Google Cloud Platform (GCP) to fully utilize its cloud infrastructure. The service is temporarily offline during this transition. We'll be back online once the "Grumpy Old Man" finishes his digital renovations.*<br>
+
+<br>
+<br>
+
 Talk with a grumpy, wise, and occasionally hilarious old man — powered by Google Gemini, built using Flask and hosted on Render.
 
 This chatbot simulates a realistic conversation with an old man's persona, enhanced with emotional understanding and audio responses.
@@ -60,7 +70,9 @@ Example response:
 <br>
 
 ## :construction: Upcoming Features
-- New Eomtions and Expressions
-- OAuth Integration
-- Chat history (for a continuous flow of conversation)
-  
+- ☁️ **Infrastructure**: Full migration to Google Cloud Platform for better scalability.
+- 🗣️ **Audio**: Integration of Gemini Text-to-Speech (TTS) for a more immersive character experience.
+- 🔊 **UI/UX**: A dedicated Audio Toggle to give users control over sound output.
+- 🎭 **Logic**: Enhanced Emotional Engine to provide a wider range of character expressions.
+- 🕛 **Memory**: Single Session Chat History to maintain context during conversations.
+
